@@ -1,0 +1,34 @@
+@media only screen and (max-width: 900px) {
+  .content {
+    margin-left: 0;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .side-br{
+    transform:translateX(-250px);
+    height: calc(100vh - 68px);
+  }
+}
+
+@media (max-width: 800px) {
+  .search-box {
+    width: 100%;
+  }
+  .content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .header-top-right {
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .header-top-center {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
